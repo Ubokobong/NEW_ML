@@ -14,9 +14,9 @@ class DataIngestionConfig:
 
 class DataIngestion:
  def __init__(self):
-  self.ingestion_config=DataIngestionConfig()
+   self.ingestion_config=DataIngestionConfig()
 
-  def initiate_data_ingestion(self):
+ def initiate_data_ingestion(self):
    logging.info("Entered the data ingestion component")
    try:
     df=pd.read_csv('notebook/data/StudentsPerformance 2.csv')
